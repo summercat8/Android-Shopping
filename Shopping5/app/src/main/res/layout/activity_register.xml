@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_bg"
+    android:padding="16dp"
+    tools:context=".app.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册成为新朋友"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="32dp"
+        android:textColor="@android:color/white"
+        android:hint="请输入电话"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_phone"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:hint="请输入密码"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="32dp"
+        android:text="注册"
+        android:textColor="@android:color/white"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意相关协议"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账号？点击登录"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+

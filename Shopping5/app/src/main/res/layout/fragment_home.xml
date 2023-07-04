@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.fragment.HomeFragment">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+<!--    作为 ListView 和 GridView 的加强版出现的,目的是在有限的屏幕之上展示大量的内容-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar" />
+
+</RelativeLayout>
